@@ -1,0 +1,14 @@
+<div>
+    <h3 id="title">{{ title }}</h3>
+    <form id="userInput">
+        Page Title: <input type="text" name="pageTitle" id="pageTitle" />
+        <button onclick="addPage()" value="Submit">Add page</button>
+    </form>
+    <ul>
+        {{#each this.pages}}
+            <li>{{this.title}} {{!--<button onclick="getRemovePageTitle()">Remove</button> --}} </li>
+        {{/each}}
+    </ul>
+</div>
+
+<!-- There should be more data shown for each course. This would mean each course object in data.json having more attributes to accomodate these. -->
